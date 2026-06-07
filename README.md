@@ -21,7 +21,7 @@ An interactive football analytics dashboard built with Python and Streamlit. Sel
   - Goals scored per team
   - Points per team
   - Wins, draws and losses per team
-  - Attack vs defence scatter plot (bubble size = points)
+  - Attack vs defence scatter plot 
 - Clean two-column dashboard layout
 - Data cleaned and structured with pandas
 
