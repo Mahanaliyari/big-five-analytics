@@ -1,0 +1,19 @@
+name: Keep Streamlit Alive
+
+on:
+  schedule:
+    # Runs every 20 minutes
+    - cron: '*/20 * * * *'
+  workflow_dispatch: # lets you trigger it manually too
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping app
+        run: |
+          curl -s -o /dev/null -w "%{http_code}" \
+            https://big-five-analytics.streamlit.app \
+          | grep -q "200" \
+          && echo "App is awake ✓" \
+          || echo "Got a non-200 — app may be waking up"
