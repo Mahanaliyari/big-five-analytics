@@ -22,7 +22,7 @@ def get_league_code(league_name,leagues):
 
 
 def fetch_league(league_code):
-    response = requests.get(f"http://api.football-data.org/v4/competitions/{league_code}/standings",headers = headers )
+    response = requests.get(f"http://api.football-data.org/v4/competitions/{league_code}/standings?season=2024",headers = headers )
     if response.status_code != 200: 
         return None
     return response.json()
