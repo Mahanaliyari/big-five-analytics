@@ -3,6 +3,7 @@
 An interactive football analytics dashboard built with Python and Streamlit. Select any of Europe's Big Five leagues and instantly see a visual breakdown of the top 10 teams across four charts.
 
 ---
+>[Live Demo](https://big-five-analytics.streamlit.app)
 
 ## Screenshots
 
